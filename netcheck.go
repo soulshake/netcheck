@@ -82,7 +82,6 @@ func min(a, b time.Duration) time.Duration {
 }
 
 func summarize(rchan chan result, s []stats) {
-
 	sigCh := make(chan os.Signal, 1)
 	signal.Notify(sigCh, syscall.SIGINT) // send sigints to signal channel
 
